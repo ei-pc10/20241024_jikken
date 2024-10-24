@@ -13,18 +13,14 @@
 <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best;" vr-mode-ui="enabled: false">
     <!-- オブジェクトファイルとマテリアルファイルを読み込む -->
     <a-assets>
-        <!-- https://raw.githubusercontent.com/ei-pc10/20241018_bunka_models/main/%E5%B7%A5%E4%BD%9C%E5%AE%A4.glb 縦-->
-        <!-- https://raw.githubusercontent.com/ei-pc10/20241018_bunka_models/main/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E6%A8%AA.glb 横-->
-        
         <a-asset-item id="workspace_glb_tate" src="https://drive.google.com/uc?export=download&id=1F5ftint2ZbepOnXl74naiuJeR_mh4r1I"></a-asset-item>
- 
+    </a-assets>
 
     <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <!-- マーカー hiro にモデルを表示 -->
     <a-marker preset="hiro">
         <a-gltf-model src="#workspace_glb_tate" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-gltf-model>
     </a-marker>
-
 
     <!-- ARのカメラ -->
     <a-entity camera></a-entity>
